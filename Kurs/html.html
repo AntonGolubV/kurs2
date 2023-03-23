@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display:grid ;
+            grid-template-columns: 20% 35% 7% 17% 20% ;
+            grid-template-rows: 9.5% 48% 34% 7%;
+            grid-template-areas: 
+            "header header header header header "
+            ". main  main  sidebar ."
+            ". article1  article2 article2 ."
+            "footer footer footer footer footer"
+            ;
+            grid-gap: 0.5%;
+        }
+        h1, h2, h3{
+                color:aliceblue;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+        }
+        .header{
+            background-color: aqua;
+            grid-area: header;
+        }
+        .main-conteiner{
+            background-color:green;
+            grid-area: main;
+        }
+        .sidebar{
+            background-color: yellow;
+            grid-area: sidebar;
+        }
+        .artical1{
+            background-color: rgba(93, 255, 93, 0.72);
+            grid-area: article1;
+        }
+        .artical2{
+            background-color: rgba(255, 193, 79, 0.597);
+            grid-area: article2;
+        }
+        .footer{
+            background-color: blue;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>header</h1>
+    </div>
+    <div class="main-conteiner">
+        <h2>main</h2>
+    </div>
+    <div class="sidebar"><h2>sidebar</h2></div>
+    <div class="artical1"><h2>artical1</h2></div>
+    <div class="artical2"><h2>artical2</h2></div>
+    <div class="footer"></div>
+    
+   
+</body>
+</html>
